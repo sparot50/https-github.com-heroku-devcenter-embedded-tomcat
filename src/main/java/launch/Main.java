@@ -61,8 +61,7 @@ public class Main
         = new DirResourceSet(resources, "/WEB-INF/classes", additionWebInfClassesFolder.getAbsolutePath(), "/");
       System.out.println("loading WEB-INF resources from as '" + additionWebInfClassesFolder.getAbsolutePath() + "'");
     } else { resourceSet = new EmptyResourceSet(resources); }
-    resources.addPreResources(resourceSet);
-    ctx.setResources(resources);
+    resources.addPreResources(resourceSet); ctx.setResources(resources);
     tomcat.start(); tomcat.getServer().await();
   }
 }
