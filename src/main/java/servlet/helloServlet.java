@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name="MyServlet", urlPatterns={"/servlet/helloServlet"})
-public class HelloServlet extends HttpServlet 
+public class helloServlet extends HttpServlet 
 {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
